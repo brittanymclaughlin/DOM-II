@@ -10,8 +10,8 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 * [ ] Add your project manager as collaborator on Github.
 * [ 1] Clone your OWN version of the repository (Not Lambda's by mistake!).
 * [ 1] Create a new branch: git checkout -b `<firstName-lastName>`.
-* [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-* [ ] Push commits: git push origin `<firstName-lastName>`.
+* [ 1] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+* [ 1] Push commits: git push origin `<firstName-lastName>`.
 
 **Follow these steps for completing your project.**
 
@@ -21,34 +21,34 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 
 ## Task 1: Set Up LESS Preprocessor
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [1 ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
 
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [1 ] Open your terminal and navigate to your preprocessing project by using the `cd` command
 
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [1 ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
 
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [ 1] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
 
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [1 ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Task 2: Create Unique Event Listeners
 
 * [ ] Using your [index.js file](js/index.js), create 10 [unique event listeners](https://developer.mozilla.org/en-US/docs/Web/Events). using your creativity to make the Fun Bus site more interactive.  Here are some unique events you could try to use: 
-	* [ ] `mouseover`
-	* [ ] `keydown`
-	* [ ] `wheel`
+	* [1] `mouseover`
+	* [1] `keydown`
+	* [1] `wheel`
 	* [ ] `drag / drop`
-	* [ ] `load`
+	* [1] `load`
 	* [ ] `focus`
-	* [ ] `resize`
-	* [ ] `scroll`
+	* [1] `resize`
+	* [1] `scroll`
 	* [ ] `select`
-	* [ ] `dblclick`
+	* [1] `dblclick`
 
 Using the 10 unique events, find ways to update the DOM in creative ways. For example you could change colors, animate objects, remove objects, etc.
 
-* [ ] Nest two similar events somewhere in the site and prevent the event propagation properly
-* [ ] Stop the navigation items from refreshing the page by using `preventDefault()`
+* [ 1] Nest two similar events somewhere in the site and prevent the event propagation properly
+* [ 1] Stop the navigation items from refreshing the page by using `preventDefault()`
 
 ## Stretch Task:
 

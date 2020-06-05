@@ -203,6 +203,7 @@ img {
   width: 350px;
   display: flex;
   justify-content: space-evenly;
+  border-radius: 5px;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container .nav {
@@ -214,6 +215,7 @@ img {
   font-size: 1.6rem;
   color: #212529;
   text-decoration: none;
+  border-radius: 10px;
 }
 .footer {
   width: 100%;
@@ -233,6 +235,7 @@ img {
 .home .intro img {
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 .home .intro h2 {
   margin-top: 20px;
