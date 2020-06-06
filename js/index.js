@@ -11,12 +11,34 @@ links.forEach((link) =>{
         link.style.backgroundColor = '#F6CD25';
         e.preventDefault();
         e.stopPropagation();
-    })
+    });
     link.addEventListener('mouseleave',() =>{
         link.style.backgroundColor = 'white';
 
-    })
+    });
+    if (link.textContent === "Home"){
+        link.addEventListener('mouseleave',(e)=>{
+          link.textContent = "Please";  
+        });
+    }else if (link.textContent === "About Us"){
+        link.addEventListener('mouseleave', (e)=>{
+            link.textContent = "press";
+        });
+    }else if (link.textContent === "Blog"){
+        link.addEventListener('mouseleave', (e)=> {
+            link.textContent = "any";
+        });
+    }else if (link.textContent === "Contact"){
+        link.addEventListener('mouseleave', (e)=> {
+            link.textContent = "key";
+        });
+    } else{
+
+    };
 });
+
+
+
 
 let header = document.querySelector('.main-navigation');
 header.addEventListener('dblclick', () => { header.style.color = "red";});
@@ -26,13 +48,13 @@ let logo = document.querySelector('h1');
 logo.addEventListener('wheel', (e) => {
     logo.textContent = "X marks the spot";
     e.stopPropagation();
-})
+});
 
 let body = document.querySelector('body');
 body.addEventListener('contextmenu',(e) =>{
     window.alert("Whoa, what are you doing?!?!");
     e.stopPropagation();
-} );
+});
 
 let subtitles = document.querySelectorAll('h2');
 subtitles.forEach((subtitle) => {
@@ -50,8 +72,8 @@ subtitles.forEach((subtitle) => {
         e.stopPropagation();
     }else{
         alert("Try again!");
-    }
- })
+    };
+ });
  
 let mainpic = document.querySelector('#mainpic');
 let sidepic1 = document.querySelector('#sidepic1');
@@ -65,10 +87,20 @@ window.addEventListener('resize',(e)=>{
     bottompic.src = "img/starwars.jpg";
 
 
-})
+});
 
 window.addEventListener('scroll', ()=>{body.style.backgroundColor="hotpink";});
-let buttons = document.querySelector('.btn');
+
+let button = document.querySelector('.btn');
 window.addEventListener('load', ()=>{
-    buttons.textContent = "TROLL ME!";
-})
+    button.textContent = "TROLL ME!";
+});
+let paragraphs = document.querySelectorAll('p');
+button.addEventListener('click',(e)=>{
+    subtitles.forEach((subtitle) =>{
+        subtitle.textContent = "You got trolled!";
+    });
+    paragraphs.forEach((paragraph) =>{
+        paragraph.textContent = "Where oh where did my content go? Oh where oh where could it be?";
+    });
+});
